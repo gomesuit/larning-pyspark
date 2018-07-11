@@ -12,6 +12,9 @@ df.show(1)
 df.take(1)
 df.select()
 
-
 rdd = df.rdd
+```
+
+```
+spark-submit sample1.py
 ```
