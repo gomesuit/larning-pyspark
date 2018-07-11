@@ -11,4 +11,7 @@ df.printSchema()
 df.show(1)
 df.take(1)
 df.select()
+
+
+rdd = df.rdd
 ```
