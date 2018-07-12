@@ -4,6 +4,8 @@
   - https://blog.amedama.jp/entry/2017/05/05/021306
   - https://blog.amedama.jp/entry/2018/03/03/173257
 
+javaのバージョンは10系では動作しない。8で動作確認
+
 ```python
 sqlContext =SQLContext(sc)
 df = sqlContext.read.json("companies.json")
