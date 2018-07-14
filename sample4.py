@@ -22,3 +22,5 @@ df2 = df.withColumn("a", my_udf(df.params))
 df2.printSchema()
 
 embed()
+
+# https://changhsinlee.com/pyspark-udf/
