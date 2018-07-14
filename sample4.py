@@ -11,13 +11,13 @@ df = sqlContext.read.json("sampledata/sample")
 
 df.printSchema()
 
-def aaa(params):
+def key_a(params):
     a = list(filter(lambda x: x.key == "a", params))
     return a[0].value
 
-my_udf3 = UserDefinedFunction(aaa, StringType())
+my_udf = UserDefinedFunction(key_a, StringType())
 
-df2 = df.withColumn("a", my_udf3(df.params))
+df2 = df.withColumn("a", my_udf(df.params))
 
 df2.printSchema()
 
