@@ -14,15 +14,15 @@ df.show(1)
 df.take(1)
 df.select()
 
-def test_function(event_date):
-    return event_date + 'a'
+def test_function(date):
+    return date + "a"
 
 # my_udf2 = UserDefinedFunction(lambda x: x + 'a', StringType())
 my_udf2 = UserDefinedFunction(test_function, StringType())
 
-df.withColumn('id2', my_udf2(df.event_date)).show(1)
+df.withColumn("id2", my_udf2(df.date)).show(1)
 
 # my_udf2 = UserDefinedFunction(lambda x, y: x + y, StringType())
-# df.withColumn('id2', my_udf2(df.event_date, df.event_date)).show(1)
+# df.withColumn('id2', my_udf2(df.date, df.date)).show(1)
 
 embed()

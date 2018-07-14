@@ -1,2 +1,2 @@
-{"id":2,"array":[{"key":"a","value":"1"},{"key":"b","value":"2"}]}
-{"id":3,"array":[{"key":"a","value":"5"},{"key":"b","value":"3"}]}
+{"id":2,"date":"20180101","array":[{"key":"a","value":"1"},{"key":"b","value":"2"}]}
+{"id":3,"date":"20180101","array":[{"key":"a","value":"5"},{"key":"b","value":"3"}]}
