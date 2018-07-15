@@ -2,3 +2,4 @@
 *.json
 /metastore_db
 *.log
+/output
