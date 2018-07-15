@@ -21,6 +21,8 @@ df2 = df.withColumn("a", my_udf(df.params))
 
 df2.printSchema()
 
-df2.write.parquet("output/parquet")
+df2.write.partitionBy(["id"]).parquet("output/partition")
 
 embed()
+
+# http://smrmkt.hatenablog.jp/entry/2017/06/05/212041
